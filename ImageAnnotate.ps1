@@ -125,7 +125,7 @@ function Process-Images {
             }
 
             # Append data to the CSV file
-            $ImageData | Export-Csv -Path $OutputFile -NoTypeInformation -Append
+            $ImageData | Export-Csv -Path $OutputFile -NoTypeInformation -Append -Encoding UTF8
 
             Write-Host "Data saved to $OutputFile"
         }
